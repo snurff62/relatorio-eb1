@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EB Produções</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2; /* Fundo claro */
+      background-image: linear-gradient(to bottom, #f2f2f2, #e6e6e6); /* Gradiente de fundo */
+    }
+
+    header {
+      background-color: #4CAF50; /* Verde claro */
+      color: #fff; /* Letras brancas */
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #fff; /* Letras brancas */
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #fff; /* Fundo branco */
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #4CAF50; /* Verde claro */
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #666; /* Letras escuras */
+    }
+
+    footer {
+      background-color: #4CAF50; /* Verde claro */
+      color: #fff; /* Letras brancas */
+      padding: 10px;
+      text-align: center;
+      clear: both;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff; /* Fundo branco */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4CAF50; /* Verde claro */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #666; /* Letras escuras */
+    }
+
+    .textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      height: 100px;
+      color: #666; /* Letras escuras */
+    }
+
+    .button-group {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Verde claro */
+      color: #fff; /* Letras brancas */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #3e8e41;
+    }
+
+    .text {
+      font-size: 16px;
+      color: #666; /* Letras escuras */
+      margin-bottom: 20px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #337ab7;
+    }
+
+    .link:hover {
+      color: #23527c;
+    }
+
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Bem-vindo ao APP da EB Produções</h1>
+      <p>Este é o aplicativo oficial da EB Produções.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 EB Produções</p>
+  </footer>
+  <div class="container">
+    <div class="card">
+      <div class="card-content">
+        <h2 class="title">RELATÓRIO SEMANAL DE ACOMPANHAMENTO DE PRODUÇÃO</h2>
+        <div class="input-group">
+          <div>
+            <label for="dia">Dia:</label>
+            <input type="number" id="dia" name="dia" class="input">
+          </div>
+          <div>
+            <label for="mes">Mês:</label>
+            <input type="text" id="mes" name="mes" class="input">
+          </div>
+          <div>
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" class="input" value="2025">
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" class="input">
+        </div>
+        <div class="input-group">
+          <label for="funcao">Função/Setor:</label>
+          <input type="text" id="funcao" name="funcao" class="input">
+        </div>
+        <div class="input-group">
+          <label for="tarefas">Tarefas Concluídas:</label>
+          <textarea id="tarefas" name="tarefas" class="textarea"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="resultados">Resultados Alcançados:</label>
+          <textarea id="resultados" name="resultados" class="textarea"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="desafios">Eventuais Desafios ou Pendências:</label>
+          <textarea id="desafios" name="desafios" class="textarea"></textarea>
+        </div>
+        <div class="input-group">
+          <label for="sugestoes">Sugestões ou Observações:</label>
+          <textarea id="sugestoes" name="sugestoes" class="textarea"></textarea>
+        </div>
+        <p class="text">O relatório deve ser apresentado à Secretaria Rosa todas as segundas-feiras e é de caráter obrigatório para todos os funcionários da EB Produções.</p>
+        <div class="button-group">
+          <button class="button">Enviar Relatório</button>
+          <p class="text">Enviar via WhatsApp: <a href="https://api.whatsapp.com/send?phone=+244947266967" target="_blank" class="link">+244947266967</a></p>
+        </div>
+        <div class="footer">
+          <p class="title">Francisca Brandão</p>
+          <p class="text">P.C.E - PRESIDENTE DA COMISSÃO EXECUTIVA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
